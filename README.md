@@ -5,7 +5,7 @@
 ### Task1: ✅
 ### Task2: ✅
 
-## Week2: 
+## Week2: ✅
 
 ### Task1: ✅
 ### Task2: ✅
