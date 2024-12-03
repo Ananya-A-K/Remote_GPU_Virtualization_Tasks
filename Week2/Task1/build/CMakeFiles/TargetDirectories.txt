@@ -1,0 +1,4 @@
+/home/ananya/MyFiles/r_gpuV/Week2/Task1/build/CMakeFiles/server.dir
+/home/ananya/MyFiles/r_gpuV/Week2/Task1/build/CMakeFiles/client.dir
+/home/ananya/MyFiles/r_gpuV/Week2/Task1/build/CMakeFiles/edit_cache.dir
+/home/ananya/MyFiles/r_gpuV/Week2/Task1/build/CMakeFiles/rebuild_cache.dir
