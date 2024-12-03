@@ -1,0 +1,17 @@
+# To generate the gRPC code from the protobuf definition:
+protoc -I=. --cpp_out=. --grpc_out=. --plugin=protoc-gen-grpc=`which grpc_cpp_plugin` helloworld.proto
+
+# To build the project and and generate client and servver executables
+mkdir build
+cd build
+cmake ..
+make
+
+# To run teh server:
+cd build
+./server
+
+# For the client, open another terminal in the build directory:
+./client
+
+## The client should receive the custom message, intead of the original hello world message
