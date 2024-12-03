@@ -1,0 +1,32 @@
+# To generate the C++ code from the protobuf definition:
+protoc -I=. --cpp_out=. --grpc_out=. --plugin=protoc-gen-grpc=`which grpc_cpp_plugin` helloWorld.proto
+
+# To build the project and and generate client and servver executables
+mkdir build
+cd build
+cmake ..
+make
+
+# To run teh server:
+cd build
+./server
+
+# For the client, open another terminal in the build directory:
+./client
+
+## The client should receive: Greeter received: Hello, World
+
+# Ensure that the firewall on both systems allows traffic on port 50051.
+# You may need to add a rule to allow incoming connections on this port.
+sudo ufw allow 50051
+
+# To run server on the other machine
+cd build
+./server
+
+# On this machine, which is a client, run the server
+./client
+
+## The client should receive: Greeter received: Hello, World
+
+
